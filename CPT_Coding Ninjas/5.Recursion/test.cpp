@@ -14,7 +14,6 @@ int fib(int n){
     return output;
 }
 
-
 int main()
 {
     cout<<fib(4)<<endl;
