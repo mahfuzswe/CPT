@@ -1,22 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int fib(int n){
+int factorial(int n){
     if(n==0){
-        return 0;
-    }
-    if(n==1){
         return 1;
     }
-    int smallOutput1= fib(n-1);
-    int smallOutput2= fib(n-2);
-    int output=smallOutput1+smallOutput2;
+    int smallOutput = factorial(n-1);
+    int output = n*smallOutput;
     return output;
 }
 
 int main()
 {
-    cout<<fib(4)<<endl;
-
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    
+    cout<<factorial(4)<<endl;
+    
+    
     return 0;
 }
+
